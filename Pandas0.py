@@ -26,3 +26,29 @@ data = {
 array = pd.Series(data)
 print(array)
 print(array['a'])
+
+# 데이터 프레임이란
+# 다수의 시리즈(Series)를 모아 처리하기 위한 목적으로 사용
+# 표 형태로 데이터를 손쉽게 출력하고자 할 때 사용
+
+word_dict = {
+    'Apple': '사과',
+    'Banana': '바나나',
+    'Carrot': '당근'
+}
+
+frequency_dict = {
+    'Apple': 3,
+    'Banana': 5,
+    'Carrot': 7
+}
+
+word = pd.Series(word_dict)
+frequency = pd.Series(frequency_dict)
+
+summary = pd.DataFrame({
+    'word': word,
+    'frequency':frequency
+})
+
+print(summary)
