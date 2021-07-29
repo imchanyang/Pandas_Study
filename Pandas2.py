@@ -75,5 +75,5 @@ print(array3.sum())
 
 # 데이터 프레임 정렬 함수
 print(array3)
-array3 = array3.sort_values(0, ascending=False)
+array3 = array3.sort_values(1, ascending=True)
 print(array3)

@@ -8,9 +8,9 @@ import pandas as pd
 df = pd.DataFrame(np.random.randint(1, 10, (2, 2)), index=[0, 1], columns=["A", "B"])
 
 print(df)
-# 컴럼 A의 각 원소가 5보다 작거나 같은지 출력
+# 컬럼 A의 각 원소가 5보다 작거나 같은지 출력
 print(df["A"] <= 5)
-# 컴럼 A의 원소가 5보다 작고, 컴험 B의 원소가 8보다 작은 행 추출
+# 컬럼 A의 원소가 5보다 작고, 컬럼 B의 원소가 8보다 작은 행 추출
 print(df.query("A <= 5 and B <= 8"))
 
 # 데이터 프레임의 개별 연산1
