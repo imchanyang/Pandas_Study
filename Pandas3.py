@@ -76,10 +76,17 @@ df = df.groupby(["Type"]).filter(my_filter)
 print(df)
 
 # 데이터 프레임의 그룹화4
+df = pd.DataFrame([
+    ['Apple', 7, 5, 'Fruit'],
+    ['Banana', 3, 6, 'Fruit'],
+    ['Beef', 5, 2, 'Meal'],
+    ['Kimchi', 4, 8, 'Meal']], columns=["Name", "Frequency", "Importance", "Type"])
+print(df)
+
 df = df.groupby("Type").get_group("Fruit")
 print(df)
 
-# 데이터 프레임의 그룸화5
+# 데이터 프레임의 그룹화5
 df = pd.DataFrame([
     ['Apple', 7, 5, 'Fruit'],
     ['Banana', 3, 6, 'Fruit'],
